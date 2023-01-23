@@ -7,7 +7,9 @@ https://user-images.githubusercontent.com/97191134/213992135-6bc4a15b-5ec7-49ca-
 
 
 ## Project Descirption
-This is a choose our own adventure game in portrait mode. You make decisions for the little robot that will have unchangeable consequences to the story.
+This is a choose our own adventure game in portrait mode for android and ios. You make decisions for the little robot that will have unchangeable consequences to the story.
+
+I will integrate the log in system from my website to this game to save progress.
 
 ## Prerequisites
 You will need
@@ -32,3 +34,7 @@ You will need
 - [Sgak Art](https://sagak-art-pururu.itch.io/casual-style-fx)
 - [gooseninja](https://gooseninja.itch.io/)
 - [penusbmic](https://penusbmic.itch.io/)
+
+## current progress
+- Added animation for the robot walking
+
