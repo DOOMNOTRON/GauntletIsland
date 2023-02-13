@@ -2,7 +2,9 @@
 
 
 
-https://user-images.githubusercontent.com/97191134/213992135-6bc4a15b-5ec7-49ca-b3a0-311292026056.mp4
+https://user-images.githubusercontent.com/97191134/218593576-49601a52-abf0-4513-9e3d-6bc49a7525b5.mp4
+
+
 
 
 
@@ -17,6 +19,7 @@ You will need
 - Visual Studio Code 2022 - [Link](https://visualstudio.microsoft.com/)
 - Unity Game Engine - [Link](https://unity.com/download)
 - Asperite (I am using paid version / there is a trial version) - [Link](https://www.aseprite.org/#buy)
+- GitHub Desktop - Source control - [Link](https://desktop.github.com/)
 
 ## Quick Start Guide
 
@@ -36,5 +39,5 @@ You will need
 - [penusbmic](https://penusbmic.itch.io/)
 
 ## current progress
-- Added animation for the robot walking
+- Restarted the project because I didnt understand that changes made in unity while the play button is selected will not save. =(
 
