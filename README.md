@@ -18,7 +18,8 @@ You will need
 
 - Visual Studio Code 2022 - [Link](https://visualstudio.microsoft.com/)
 - Unity Game Engine - [Link](https://unity.com/download)
-- Asperite (I am using paid version / there is a trial version) - [Link](https://www.aseprite.org/#buy)
+- Asperite (I am using the paid version. There is a trial version) - [Link](https://www.aseprite.org/#buy)
+- Pixaki (I am using the paid version on Ipad. It is way better than Aseprite, but Aseprite is needed. There is a free version.) - [Link](https://pixaki.com/)
 - GitHub Desktop - Source control - [Link](https://desktop.github.com/)
 
 ## Quick Start Guide
