@@ -1,11 +1,7 @@
 # GauntletIsland
 
 
-
-https://user-images.githubusercontent.com/97191134/218593576-49601a52-abf0-4513-9e3d-6bc49a7525b5.mp4
-
-
-
+https://user-images.githubusercontent.com/97191134/218668583-d251557f-71f0-4cd3-85d4-b1ef10f91ffd.mp4
 
 
 ## Project Descirption
@@ -41,4 +37,4 @@ You will need
 
 ## current progress
 - After restarting the project I have successfully added button funtionality to the start screen.
-
+- Added login/register screen with buttons and an animation of a rotating globe.
