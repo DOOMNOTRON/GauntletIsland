@@ -40,5 +40,5 @@ You will need
 - [penusbmic](https://penusbmic.itch.io/)
 
 ## current progress
-- Restarted the project because I didnt understand that changes made in unity while the play button is selected will not save. =(
+- After restarting the project I have successfully added button funtionality to the start screen.
 
