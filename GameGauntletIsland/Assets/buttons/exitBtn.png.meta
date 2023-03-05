@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 80b35bb5567916f4ea3f9fee8a43054b
+guid: f77e8d8b4f992b74b9d07201df9ae766
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -141,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: loginBtn_0
+      name: exitBtn_0
       rect:
         serializedVersion: 2
-        x: 145
+        x: 147
         y: 41
-        width: 121
-        height: 38
+        width: 118
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,92 +155,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0aba9fcea3219e4b913c82237013f90
-      internalID: 1450093465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: loginBtn_1
-      rect:
-        serializedVersion: 2
-        x: 550
-        y: 41
-        width: 127
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f4c94e85bb538548a683f19652ac7d1
-      internalID: -1178775037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: loginBtn_2
-      rect:
-        serializedVersion: 2
-        x: 962
-        y: 41
-        width: 124
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d30315a6adf462f489ceb7328b6b76a2
-      internalID: -723137973
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: loginBtn_3
-      rect:
-        serializedVersion: 2
-        x: 1374
-        y: 37
-        width: 121
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3ee6148765530443be0fac34658dd3f
-      internalID: 2068668085
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: loginBtn_4
-      rect:
-        serializedVersion: 2
-        x: 1783
-        y: 36
-        width: 121
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a23da263f80117243986d5ac22d460a3
-      internalID: -1195437264
+      spriteID: cb9d38a60b318a34495077a8b038afa6
+      internalID: 720466867
       vertices: []
       indices: 
       edges: []
@@ -256,11 +172,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      loginBtn_1: -1178775037
-      loginBtn_0: 1450093465
-      loginBtn_4: -1195437264
-      loginBtn_2: -723137973
-      loginBtn_3: 2068668085
+      exitBtn_0: 720466867
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
