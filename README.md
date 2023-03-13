@@ -1,7 +1,11 @@
 # GauntletIsland
 
 
-https://user-images.githubusercontent.com/97191134/218668583-d251557f-71f0-4cd3-85d4-b1ef10f91ffd.mp4
+
+
+
+https://user-images.githubusercontent.com/97191134/224713010-caf005ee-cb76-4527-8509-86727d407a09.mp4
+
 
 
 ## Project Descirption
