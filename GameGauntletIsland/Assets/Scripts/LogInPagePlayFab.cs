@@ -34,4 +34,30 @@ public class LogInPagePlayFab : MonoBehaviour
     {
         
     }
+
+    #region Button Functions
+    public void OpenLoginPage() 
+    {
+        LoginPage.SetActive(true);
+        RegisterPage.SetActive(false);
+        RecoveryPage.SetActive(false);
+        TopText.text ="Login";
+    } 
+
+    public void openRegisterPage() 
+    {
+        LoginPage.SetActive(false);
+        RegisterPage.SetActive(true);
+        RecoveryPage.SetActive(false);
+        TopText.text = "Register";
+    }
+
+    public void openRecoveryPage()
+    {
+        LoginPage.SetActive(false);
+        RegisterPage.SetActive(false);
+        RecoveryPage.SetActive(true);
+        TopText.text = "Recover Password";
+    }
+    #endregion
 }
