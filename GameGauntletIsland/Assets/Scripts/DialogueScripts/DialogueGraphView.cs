@@ -16,7 +16,7 @@ public class DialogueGraphView : GraphView
 
     public DialogueGraphView()
     {
-
+        styleSheets.Add(Resources.Load<StyleSheet>("DialogueGraph"));
         SetupZoom(ContentZoomer.DefaultMinScale, ContentZoomer.DefaultMaxScale);
 
         this.AddManipulator(new ContentDragger());
