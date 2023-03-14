@@ -16,9 +16,16 @@ public class DialogueGraphView : GraphView
 
     public DialogueGraphView()
     {
+
+        SetupZoom(ContentZoomer.DefaultMinScale, ContentZoomer.DefaultMaxScale);
+
         this.AddManipulator(new ContentDragger());
         this.AddManipulator(new SelectionDragger());
         this.AddManipulator(new ContentDragger());
+
+        var grid = new GridBackground();
+        Insert(0, grid);
+        grid.StretchToParentSize();
 
         AddElement(GenerateEntryPointNode());
     }
@@ -78,11 +85,27 @@ public class DialogueGraphView : GraphView
         inputPort.portName = "Input";
         dialogueNode.inputContainer.Add(inputPort);
 
-        //var button = new Button(clickEvent () => {AddChoicePort})
+        var button = new Button( clickEvent: () => { AddChoicePort(dialogueNode); });
+        button.text = "New Choice";
+        dialogueNode.titleContainer.Add(button);
+
         dialogueNode.RefreshExpandedState();
         dialogueNode.RefreshPorts();
         dialogueNode.SetPosition(new Rect(Vector2.zero, defaultNodeSize));
 
         return dialogueNode;
     }
+    
+    private void AddChoicePort(DialogueNode dialogueNode)
+    {
+        var generatedPort = GeneratePort(dialogueNode, Direction.Output);
+
+        var outputPortCount = dialogueNode.outputContainer.Query("connector").ToList().Count;
+        generatedPort.portName = $"Choice {outputPortCount}";
+
+        dialogueNode.outputContainer.Add(generatedPort);
+        dialogueNode.RefreshPorts();
+        dialogueNode.RefreshExpandedState();
+    }
+    
 }
