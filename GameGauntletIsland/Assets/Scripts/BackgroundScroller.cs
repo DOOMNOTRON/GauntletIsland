@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class BackgroundScroller : MonoBehaviour
 {
+    // This is the settings for the scroll speed
     [Range(-1f, 1f)]
     public float scrollSpeed = 0.5f;
     private float offset;

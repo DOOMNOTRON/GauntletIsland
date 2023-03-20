@@ -39,10 +39,10 @@ public class LogInPagePlayFab : MonoBehaviour
     }
 
     #region Button Functions
-
+    // This will send the register information to playfab
+    // if successful it will register the user's account
     public void RegisterUser() 
     {
-        //if ()
         var request = new RegisterPlayFabUserRequest
         {
             DisplayName = UserNameRegisterInput.text,
@@ -55,6 +55,7 @@ public class LogInPagePlayFab : MonoBehaviour
         PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSuccess, OnError);
     }
 
+    // This will send the information to playfab to login
     public void LoginUser() 
     {
         var request = new LoginWithEmailAddressRequest
@@ -66,12 +67,14 @@ public class LogInPagePlayFab : MonoBehaviour
         PlayFabClientAPI.LoginWithEmailAddress(request, OnLoginSuccess, OnError);
     }
 
+    // Success message to display when called.
     private void OnLoginSuccess(LoginResult result) 
     {
         MessageText.text = "Success, loggin in!";
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    // This the request sent to playfab to reset the password 
     public void RecoverUserPassword() 
     {
         var request = new SendAccountRecoveryEmailRequest
@@ -84,37 +87,43 @@ public class LogInPagePlayFab : MonoBehaviour
 
     }
 
+    // If the request is successful this message will be sent.
     public void OnRecoverySuccess(SendAccountRecoveryEmailResult obj) 
     {
         OpenLoginPage();
         MessageText.text = "Recovery Email sent!";
     }
 
+    // Invalid Email message
     private void OnErrorRecovery(PlayFabError result) 
     {
         MessageText.text = "Invalid Email";
     }
 
+    // Error message sent based on the erroeMessage
     private void OnError(PlayFabError Error) 
     {
         MessageText.text = Error.ErrorMessage;
         Debug.Log(Error.GenerateErrorReport());
     }
 
+    // Opens the login scene when an account is successfully resgistered
     private void OnRegisterSuccess(RegisterPlayFabUserResult Result) 
     {
         MessageText.text = "New Account is Created";
         OpenLoginPage();
     }
 
+    // activates the loginpage panel and deactivates the other two panels
     public void OpenLoginPage() 
     {
         LoginPage.SetActive(true);
         RegisterPage.SetActive(false);
         RecoveryPage.SetActive(false);
         TopText.text ="Login";
-    } 
+    }
 
+    // activates the Register Panel and deactivates the other two panels
     public void openRegisterPage() 
     {
         LoginPage.SetActive(false);
@@ -123,6 +132,7 @@ public class LogInPagePlayFab : MonoBehaviour
         TopText.text = "Register";
     }
 
+    // activates the Recovery panel and deactivates the other two panels
     public void openRecoveryPage()
     {
         LoginPage.SetActive(false);

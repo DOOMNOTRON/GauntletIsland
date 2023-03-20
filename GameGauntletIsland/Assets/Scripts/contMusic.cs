@@ -5,6 +5,7 @@ using UnityEngine;
 public class contMusic : MonoBehaviour
 {
     public static contMusic instance;
+    // On awake this will detect the game object
     private void Awake()
     {
         if (instance != null)

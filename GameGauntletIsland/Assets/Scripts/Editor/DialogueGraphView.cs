@@ -14,6 +14,7 @@ public class DialogueGraphView : GraphView
 {
     private readonly Vector2 defaultNodeSize = new Vector2(150, 200);
 
+    // 'drag and drop' and mouse selection options
     public DialogueGraphView()
     {
         styleSheets.Add(Resources.Load<StyleSheet>("DialogueGraph"));
@@ -42,13 +43,16 @@ public class DialogueGraphView : GraphView
         
     }
 
+    // Creates ports to add options and connects the port to other nodes
     private Port GeneratePort(DialogueNode node, Direction portDirection, Port.Capacity capacity = Port.Capacity.Single)
     {
         return node.InstantiatePort(Orientation.Horizontal, portDirection, capacity, typeof(float)); // Type does not matter
     }
 
+    // THis will generate the Starting node
     private DialogueNode GenerateEntryPointNode()
     {
+        // Initial variables for the starting node
         var node = new DialogueNode
         {
             title = "START",
