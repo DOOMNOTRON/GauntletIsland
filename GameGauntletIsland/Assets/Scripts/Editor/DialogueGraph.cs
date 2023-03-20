@@ -23,13 +23,14 @@ public class DialogueGraph : EditorWindow
         window.titleContent = new GUIContent("Dialogue Graph");
     }
 
-    // Gets a new instance of the graphview window
+    // Gets a new instance of the graphview window and toolbar
     private void OnEnable()
     {
         ConstructGraphView();
         GenerateToolbar();
     }
 
+    // generates the graph window to stretch up to the size of the editor window
     private void ConstructGraphView()
     {
         _graphView = new DialogueGraphView
@@ -41,6 +42,7 @@ public class DialogueGraph : EditorWindow
         rootVisualElement.Add(_graphView);
     }
 
+    // generates toolbar and adds a create a node button that adds a new node
     private void GenerateToolbar()
     {
         var toolbar = new Toolbar();
